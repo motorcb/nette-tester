@@ -1,0 +1,16 @@
+PHP 5.4.6 | "php-cgi.exe" -c "E:\www\nette\tests\php-win.ini" | 20 threads
+
+-- FAILED: nette\tests\ExampleTest.phpt
+   Exited with error code 255 (expected 0)
+   Nette\DI\ServiceCreationException: Class Repository\Article used in service '22_Repository_Article' has not been found or is not instantiable.
+   
+   in Nette\DI\ContainerBuilder.php(262) 
+   in Nette\DI\ContainerBuilder.php(390) Nette\DI\ContainerBuilder->prepareClassList()
+   in Nette\DI\Compiler.php(142) Nette\DI\ContainerBuilder->generateClasses()
+   in Nette\DI\Compiler.php(94) Nette\DI\Compiler->generateCode()
+   in Nette\common\Configurator.php(213) Nette\DI\Compiler->compile()
+   in Nette\common\Configurator.php(163) Nette\Configurator->buildContainer()
+   in nette\tests\bootstrap.php(25) Nette\Configurator->createContainer()
+   in nette\tests\ExampleTest.phpt(9) require()
+
+FAILURES! (1 tests, 1 failures)
